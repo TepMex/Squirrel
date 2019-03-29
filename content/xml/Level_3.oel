@@ -1,0 +1,53 @@
+<level width="640" height="480">
+  <grid exportMode="Rectangles" />
+  <tiles tileset="tileset" exportMode="XMLCoords">
+    <tile x="0" y="2" tx="2" ty="0" />
+    <tile x="0" y="7" tx="2" ty="0" />
+    <tile x="0" y="14" tx="0" ty="0" />
+    <tile x="1" y="2" tx="2" ty="0" />
+    <tile x="1" y="7" tx="2" ty="0" />
+    <tile x="2" y="2" tx="2" ty="0" />
+    <tile x="2" y="7" tx="2" ty="0" />
+    <tile x="3" y="3" tx="2" ty="0" />
+    <tile x="3" y="8" tx="2" ty="0" />
+    <tile x="3" y="12" tx="2" ty="0" />
+    <tile x="4" y="4" tx="2" ty="0" />
+    <tile x="4" y="8" tx="2" ty="0" />
+    <tile x="4" y="11" tx="2" ty="0" />
+    <tile x="5" y="5" tx="2" ty="0" />
+    <tile x="5" y="11" tx="2" ty="0" />
+    <tile x="6" y="6" tx="2" ty="0" />
+    <tile x="6" y="9" tx="2" ty="0" />
+    <tile x="7" y="6" tx="2" ty="0" />
+    <tile x="8" y="10" tx="2" ty="0" />
+    <tile x="9" y="7" tx="1" ty="0" />
+    <tile x="10" y="7" tx="0" ty="0" />
+    <tile x="11" y="7" tx="1" ty="0" />
+    <tile x="12" y="6" tx="2" ty="0" />
+    <tile x="12" y="8" tx="2" ty="0" />
+    <tile x="13" y="6" tx="2" ty="0" />
+    <tile x="13" y="8" tx="2" ty="0" />
+    <tile x="14" y="5" tx="2" ty="0" />
+    <tile x="14" y="9" tx="2" ty="0" />
+    <tile x="15" y="4" tx="2" ty="0" />
+    <tile x="15" y="10" tx="2" ty="0" />
+    <tile x="16" y="3" tx="2" ty="0" />
+    <tile x="16" y="11" tx="2" ty="0" />
+    <tile x="17" y="2" tx="2" ty="0" />
+    <tile x="17" y="12" tx="2" ty="0" />
+    <tile x="18" y="2" tx="2" ty="0" />
+    <tile x="18" y="12" tx="2" ty="0" />
+    <tile x="19" y="2" tx="2" ty="0" />
+    <tile x="19" y="12" tx="2" ty="0" />
+  </tiles>
+  <objects>
+    <crystal id="0" x="0" y="32" />
+    <crystal id="1" x="608" y="32" />
+    <crystal id="2" x="384" y="224" />
+    <nut id="3" x="0" y="416" />
+    <squirrel id="5" x="320" y="192" />
+    <crystal id="4" x="608" y="352" />
+    <crystal id="6" x="544" y="224" />
+    <crystal id="8" x="256" y="288" />
+  </objects>
+</level>

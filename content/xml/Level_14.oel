@@ -1,0 +1,18 @@
+<level width="640" height="480">
+  <grid exportMode="Rectangles">
+    <rect x="0" y="0" w="640" h="480" />
+  </grid>
+  <tiles tileset="tileset" exportMode="XMLCoords">
+    <tile x="7" y="6" tx="2" ty="0" />
+    <tile x="8" y="6" tx="2" ty="0" />
+    <tile x="10" y="14" tx="2" ty="0" />
+    <tile x="19" y="3" tx="0" ty="0" />
+  </tiles>
+  <objects>
+    <inportal id="0" x="320" y="0" gravity="1" />
+    <squirrel id="1" x="224" y="160" />
+    <outportal id="2" x="608" y="32" gravity="0" />
+    <nut id="3" x="608" y="64" />
+    <crystal id="4" x="256" y="160" />
+  </objects>
+</level>

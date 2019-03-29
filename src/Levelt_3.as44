@@ -1,0 +1,47 @@
+package
+{
+	import Levels.Level_2;
+	import net.flashpunk.Engine;
+	import net.flashpunk.FP;
+	import net.flashpunk.World;
+	import splash.Splash;
+	
+	
+	
+	public class Levelt_3 extends Engine
+	{
+		
+		public static var currentWorld:World;
+		public static var currentLevel:Level;
+		
+		public function Levelt_3():void
+		{
+			
+			super(640, 500);
+			FP.console.enable();
+			
+		}
+		
+		override public function init():void
+		{
+			
+			FP.world = new Level_2();
+			currentWorld = FP.world;
+			super.init();
+			
+		}
+		
+		public static function changeWorld(world:Class):void
+		{
+			
+			FP.world = null;
+			currentWorld = null;
+			FP.world = new world();
+			currentWorld = FP.world;
+			
+		}
+		
+	}
+	
+	
+}

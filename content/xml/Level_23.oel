@@ -1,0 +1,106 @@
+<level width="640" height="480">
+  <grid exportMode="Rectangles" />
+  <tiles tileset="tileset" exportMode="XMLCoords">
+    <tile x="0" y="3" tx="2" ty="0" />
+    <tile x="1" y="4" tx="1" ty="0" />
+    <tile x="2" y="2" tx="2" ty="0" />
+    <tile x="2" y="9" tx="2" ty="0" />
+    <tile x="2" y="13" tx="2" ty="0" />
+    <tile x="3" y="4" tx="1" ty="0" />
+    <tile x="3" y="9" tx="2" ty="0" />
+    <tile x="3" y="13" tx="2" ty="0" />
+    <tile x="4" y="1" tx="2" ty="0" />
+    <tile x="4" y="4" tx="1" ty="0" />
+    <tile x="4" y="9" tx="2" ty="0" />
+    <tile x="4" y="12" tx="2" ty="0" />
+    <tile x="5" y="3" tx="1" ty="0" />
+    <tile x="5" y="8" tx="2" ty="0" />
+    <tile x="5" y="9" tx="2" ty="0" />
+    <tile x="5" y="12" tx="2" ty="0" />
+    <tile x="5" y="14" tx="0" ty="0" />
+    <tile x="6" y="3" tx="2" ty="0" />
+    <tile x="6" y="8" tx="2" ty="0" />
+    <tile x="6" y="11" tx="2" ty="0" />
+    <tile x="6" y="14" tx="0" ty="0" />
+    <tile x="7" y="3" tx="1" ty="0" />
+    <tile x="7" y="8" tx="2" ty="0" />
+    <tile x="7" y="11" tx="2" ty="0" />
+    <tile x="7" y="14" tx="0" ty="0" />
+    <tile x="8" y="3" tx="1" ty="0" />
+    <tile x="8" y="8" tx="2" ty="0" />
+    <tile x="8" y="11" tx="2" ty="0" />
+    <tile x="8" y="14" tx="0" ty="0" />
+    <tile x="9" y="3" tx="1" ty="0" />
+    <tile x="9" y="8" tx="2" ty="0" />
+    <tile x="9" y="14" tx="0" ty="0" />
+    <tile x="10" y="3" tx="1" ty="0" />
+    <tile x="10" y="7" tx="2" ty="0" />
+    <tile x="10" y="14" tx="0" ty="0" />
+    <tile x="11" y="3" tx="1" ty="0" />
+    <tile x="11" y="7" tx="2" ty="0" />
+    <tile x="11" y="14" tx="0" ty="0" />
+    <tile x="12" y="3" tx="1" ty="0" />
+    <tile x="12" y="6" tx="2" ty="0" />
+    <tile x="12" y="8" tx="2" ty="0" />
+    <tile x="13" y="5" tx="2" ty="0" />
+    <tile x="13" y="8" tx="2" ty="0" />
+    <tile x="13" y="9" tx="2" ty="0" />
+    <tile x="13" y="14" tx="0" ty="0" />
+    <tile x="14" y="3" tx="2" ty="0" />
+    <tile x="14" y="4" tx="2" ty="0" />
+    <tile x="14" y="8" tx="2" ty="0" />
+    <tile x="14" y="9" tx="2" ty="0" />
+    <tile x="14" y="14" tx="0" ty="0" />
+    <tile x="15" y="4" tx="0" ty="0" />
+    <tile x="15" y="8" tx="2" ty="0" />
+    <tile x="15" y="9" tx="2" ty="0" />
+    <tile x="15" y="14" tx="0" ty="0" />
+    <tile x="16" y="4" tx="1" ty="0" />
+    <tile x="16" y="9" tx="2" ty="0" />
+    <tile x="16" y="14" tx="0" ty="0" />
+    <tile x="17" y="3" tx="2" ty="0" />
+    <tile x="17" y="4" tx="1" ty="0" />
+    <tile x="17" y="9" tx="2" ty="0" />
+    <tile x="17" y="14" tx="0" ty="0" />
+    <tile x="18" y="2" tx="2" ty="0" />
+    <tile x="18" y="4" tx="1" ty="0" />
+    <tile x="18" y="9" tx="2" ty="0" />
+    <tile x="18" y="10" tx="2" ty="0" />
+    <tile x="18" y="14" tx="0" ty="0" />
+    <tile x="19" y="4" tx="2" ty="0" />
+    <tile x="19" y="10" tx="2" ty="0" />
+    <tile x="19" y="11" tx="0" ty="0" />
+    <tile x="19" y="14" tx="0" ty="0" />
+  </tiles>
+  <objects>
+    <crystal id="0" x="576" y="416" />
+    <crystal id="2" x="544" y="416" />
+    <crystal id="3" x="512" y="416" />
+    <crystal id="4" x="480" y="416" />
+    <crystal id="5" x="448" y="416" />
+    <crystal id="6" x="416" y="416" />
+    <crystal id="8" x="352" y="416" />
+    <crystal id="9" x="320" y="416" />
+    <crystal id="10" x="320" y="416" />
+    <crystal id="11" x="288" y="416" />
+    <crystal id="12" x="256" y="416" />
+    <crystal id="13" x="224" y="416" />
+    <crystal id="15" x="192" y="160" />
+    <crystal id="17" x="576" y="32" />
+    <crystal id="18" x="608" y="192" />
+    <crystal id="19" x="288" y="64" />
+    <crystal id="20" x="64" y="32" />
+    <crystal id="21" x="32" y="64" />
+    <crystal id="22" x="0" y="64" />
+    <crystal id="24" x="96" y="32" />
+    <crystal id="25" x="128" y="0" />
+    <crystal id="27" x="64" y="384" />
+    <inportal id="28" x="256" y="320" gravity="0" />
+    <squirrel id="30" x="480" y="96" />
+    <outportal id="16" x="608" y="288" gravity="0" />
+    <nut id="1" x="608" y="416" />
+    <crystal id="7" x="96" y="256" />
+    <crystal id="23" x="160" y="0" />
+    <crystal id="14" x="160" y="352" />
+  </objects>
+</level>

@@ -1,0 +1,38 @@
+<level width="640" height="480">
+  <grid exportMode="Rectangles" />
+  <tiles tileset="tileset" exportMode="XMLCoords">
+    <tile x="0" y="11" tx="0" ty="0" />
+    <tile x="1" y="11" tx="0" ty="0" />
+    <tile x="2" y="10" tx="1" ty="0" />
+    <tile x="4" y="9" tx="1" ty="0" />
+    <tile x="5" y="9" tx="1" ty="0" />
+    <tile x="6" y="10" tx="1" ty="0" />
+    <tile x="7" y="10" tx="1" ty="0" />
+    <tile x="8" y="11" tx="0" ty="0" />
+    <tile x="9" y="11" tx="0" ty="0" />
+    <tile x="10" y="11" tx="0" ty="0" />
+    <tile x="12" y="10" tx="1" ty="0" />
+    <tile x="13" y="10" tx="1" ty="0" />
+    <tile x="14" y="9" tx="1" ty="0" />
+    <tile x="15" y="8" tx="1" ty="0" />
+    <tile x="15" y="10" tx="1" ty="0" />
+    <tile x="16" y="8" tx="1" ty="0" />
+    <tile x="16" y="11" tx="1" ty="0" />
+    <tile x="17" y="8" tx="1" ty="0" />
+    <tile x="17" y="11" tx="1" ty="0" />
+    <tile x="18" y="8" tx="1" ty="0" />
+    <tile x="19" y="8" tx="1" ty="0" />
+  </tiles>
+  <objects>
+    <nut id="0" x="288" y="320" />
+    <squirrel id="1" x="288" y="320" />
+    <crystal id="2" x="608" y="224" />
+    <crystal id="3" x="512" y="224" />
+    <crystal id="4" x="416" y="288" />
+    <crystal id="5" x="128" y="256" />
+    <crystal id="6" x="64" y="288" />
+    <crystal id="7" x="512" y="320" />
+	
+	
+  </objects>
+</level>

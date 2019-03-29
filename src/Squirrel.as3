@@ -1,0 +1,167 @@
+package
+{
+	import flash.geom.Point;
+	import net.flashpunk.Entity;
+	import net.flashpunk.graphics.Image;
+	import net.flashpunk.utils.Input;
+	import net.flashpunk.utils.Key;
+	import net.flashpunk.FP;
+	
+	
+	
+	public class Squirrel extends Entity
+	{
+		
+		private var image:Image;
+		
+		private var jumpVector:Number = 0;
+		private var jumpTime:int = 0;
+		private var isJump:Boolean = false;
+		private var canJump:Boolean = false;
+		
+		private var direction:Point = new Point(0, 0);
+		
+		public function Squirrel():void
+		{
+			
+			
+			image = new Image(Assets.SQUIRREL_GRAPHIC);
+			graphic = image;
+			setHitbox(image.width, image.height);
+			type = "squirrel";
+			super();
+			
+			
+		}
+		
+		override public function update():void
+		{
+			
+			checkInput();
+			
+			super.update();
+			
+		}
+		
+		private function checkInput():void
+		{
+			
+			direction.x = 0;
+			//direction.y = jumpVector + Assets.GRAVITY;
+			
+			if (Input.check(Key.M))
+			{
+				FlashPunkEngine.currentLevel.gameOver( -1);
+				MainMenu.currentPreloader.toMainMenu();
+				
+			}
+			
+			if (Input.check(Key.D) || Input.check(Key.RIGHT))
+			{
+				direction.x = Assets.PLAYER_SPEED;
+			}
+			if (Input.check(Key.A) || Input.check(Key.LEFT))
+			{
+				direction.x = -Assets.PLAYER_SPEED;
+			}
+			if (Input.check(Key.W) || Input.check(Key.UP) || Input.check(Key.SPACE))
+			{
+				if (!isJump && canJump)
+				{
+					jumpVector = Assets.JUMP_VECTOR;
+					isJump = true;
+				}
+			}
+			
+			direction.y = jumpVector + Assets.GRAVITY;
+			canJump = false;
+			
+			/*if (y > FP.screen.height + (height / 2))
+			{
+				y = -height / 2;
+			}
+			if (y < - height / 2)
+			{
+				y = FP.screen.height + (height / 2);
+			}
+			if (x > FP.screen.width + (width / 2))
+			{
+				x = -width / 2;
+			}
+			if (x < -width / 2)
+			{
+				x = FP.screen.width + (width / 2);
+			}*/
+			
+			if (y > FP.screen.height - image.height)
+			{
+				y = FP.screen.height - image.height;
+				//game over?
+				FlashPunkEngine.currentLevel.gameOver(0);
+			}
+			if (y < 0)
+			{
+				y = 0;
+			}
+			if (x > FP.screen.width - image.width)
+			{
+				x = FP.screen.width - image.width;
+			}
+			if (x < 0)
+			{
+				x = 0;
+			}
+			
+			if (collide("tile", x + direction.x, y))
+			{
+				if (FP.sign(direction.x) > 0)
+				{
+					x = Math.floor(x / 32) * 32 + width;
+				}
+				else if(FP.sign(direction.x) < 0)
+				{
+					x = Math.floor(x / 32) * 32;
+				}
+				
+				direction.x = 0;
+			}
+			
+			if (collide("tile", x, y + direction.y))
+			{
+				if(FP.sign(direction.y) < 0)
+				{
+					y = Math.round(y / 32) * 32; //trololo
+				}
+				if (FP.sign(direction.y) > 0)
+				{
+					y = Math.round(y / 32) * 32;
+					canJump = true;
+				}
+				
+				direction.y = 0;
+			}
+			
+			
+			
+			x += direction.x;
+			y += direction.y;
+			
+			
+			
+			if (Math.abs(jumpVector) > 0.05)
+			{
+				jumpVector = jumpVector + 0.05;
+			}
+			else
+			{
+				isJump = false;
+				jumpVector = 0;
+			}
+			
+		}
+		
+		
+	}
+	
+	
+}
